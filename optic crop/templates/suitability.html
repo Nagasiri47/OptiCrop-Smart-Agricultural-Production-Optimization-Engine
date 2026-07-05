@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Crop Suitability Assessment</title>
+</head>
+<body>
+
+<h1>Crop Suitability Assessment</h1>
+
+<form action="/check_suitability" method="POST">
+
+<label>Select Crop:</label>
+<select name="crop">
+    <option value="rice">Rice</option>
+    <option value="maize">Maize</option>
+    <option value="cotton">Cotton</option>
+    <option value="wheat">Wheat</option>
+</select>
+
+<br><br>
+
+<label>Temperature:</label>
+<input type="number" step="0.1" name="temperature" required>
+
+<br><br>
+
+<label>Humidity:</label>
+<input type="number" step="0.1" name="humidity" required>
+
+<br><br>
+
+<label>pH:</label>
+<input type="number" step="0.1" name="ph" required>
+
+<br><br>
+
+<label>Rainfall:</label>
+<input type="number" step="0.1" name="rainfall" required>
+
+<br><br>
+
+<input type="submit" value="Check Suitability">
+
+</form>
+
+</body>
+</html>
